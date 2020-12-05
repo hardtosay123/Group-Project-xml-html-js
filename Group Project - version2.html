@@ -13,23 +13,39 @@
                 scroll-behavior: smooth;
                 font-family: 'Times New Roman', Times, serif;
             }
-            body {
+            .container-fluid {
+                max-width: 1920px;
+            }
+            #bg-img {
+                height: 100vh;
+                overflow-y: auto;
+                position: fixed;
+                left: 0px;
+                top: 0px;
                 background-image: url("image/starry sky 4.jpg");
-                background-repeat: no-repeat ;
+                background-repeat: no-repeat;
                 width: 100%;
                 height: 100%;
+                background-position: center;
             }
             #form {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 360px;
+                padding: 15px;
+                margin: auto;
                 background-color: aquamarine;
                 opacity: 0.8;
             }
         </style>
-        
+
     </head>
     <body>
-        <div id="container" class="container h-100">
-            <div id="wrapper" class="p-5">
-                <div id="form" class="p-3 align-middle rounded">
+        <div class="container-fluid m-0 p-0">
+            <div id="bg-img">
+                <div id="form">
                     <form action="" method="GET">
                         <div class="form-group">
                             <label for="nickname">Nick Name</label>
