@@ -103,13 +103,7 @@
                     info_signal = false;
                 }
                 else {
-                    if (!(/\W/.test(nickname))) {
-                        valid_form("#nickname");
-                    }
-                    else {
-                        invalid_message("#nickname","#nickname-invalid","Nick Name can not contain symbol characters");
-                        info_signal = false;
-                    }
+                    valid_form("#nickname");
                 }
 
                 var email = $("#email").val();
