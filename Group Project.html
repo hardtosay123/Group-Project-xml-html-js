@@ -29,17 +29,15 @@
             padding: 2rem 60px;
         }
 
-        form {
-            width: 100%;
-        }
-
         @media only screen and (max-width: 768px) {}
 
         @media only screen and (max-width: 500px) {}
     </style>
     <script>
         $(document).ready(function() {
-            
+            $("#info-btn").click(function() {
+                
+            });
         });
     </script>
 </head>
@@ -58,7 +56,7 @@
                         <li data-target="#carousel" data-slide-to="1"></li>
                         <li data-target="#carousel" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner rounded-left">
+                    <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="image/STPT004.jpg" alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
@@ -85,8 +83,8 @@
                     </a>
                 </div>
             </div>
-            <div id="form" class="d-flex justify-content-center align-items-center col-12 col-lg-6 bg-light w-100 rounded-right form-padding">
-                <form action="" method="GET">
+            <div id="form" class="d-flex justify-content-center align-items-center col-12 col-lg-6 bg-light w-100 rounded form-padding">
+                <form action="" method="GET" class="w-100">
                     <div class="form-group">
                         <label for="nickname">Nick Name</label>
                         <input type="text" id="nickname" class="form-control" name="nickname" value="" />
@@ -97,13 +95,17 @@
                     </div>
                     <div class="form-group">
                         <label for="gender">Gender</label>
-                        <input type="text" id="gender" class="form-control" name="gender" value="" />
+                        <select id="gender" class="form-control" name="gender">
+                            <option value="">--Select Gender--</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="age">Age</label>
                         <input type="text" id="age" class="form-control" name="age" value="" />
                     </div>
-                    <input type="button" class="btn btn-primary btn-block" value="Start The Quiz" />
+                    <input type="button" id="info-btn" class="btn btn-primary btn-block" value="Start The Quiz" />
                 </form>
             </div>
         </div>
