@@ -62,10 +62,19 @@
     </style>
     <script>
         $(document).ready(function() {
+            var usernickname = "";
+            var useremail = "";
+            var usergender = "";
+            var userage = "";
             $("#userinfo-btn").click(function() {
                 var info = valid_info();
                 if (info === true) {
-                    //to load() ajax
+                    //to save user input
+                    usernickname = $("#nickname").val();
+                    useremail = $("#email").val();
+                    usergender = $("#gender").val();
+                    userage = $("#age").val();
+                    //next mission : to load() ajax for question!
                     /*
                     $("#wrapper").removeClass("row");
                     $("#wrapper").load("question1.txt",function(responseTxt,statusTxt,xhr){
@@ -90,7 +99,7 @@
                 var nickname = $("#nickname").val();
 
                 if (nickname === "") {
-                    error_message("#nickname","#nickname-invalid","Nick Name is required");
+                    invalid_message("#nickname","#nickname-invalid","Nick Name is required");
                     info_signal = false;
                 }
                 else {
@@ -98,7 +107,7 @@
                         valid_form("#nickname");
                     }
                     else {
-                        error_message("#nickname","#nickname-invalid","Nick Name can not contain symbol characters");
+                        invalid_message("#nickname","#nickname-invalid","Nick Name can not contain symbol characters");
                         info_signal = false;
                     }
                 }
@@ -111,7 +120,7 @@
                 var l_pos = email.substr(-1,1);
                 
                 if (email === "") {
-                    error_message("#email","#email-invalid","Email is required");
+                    invalid_message("#email","#email-invalid","Email is required");
                     info_signal = false;
                 }
                 else {
@@ -121,7 +130,7 @@
                                 valid_form("#email");
                             }
                             else {
-                                error_message("#email","#email-invalid","Invalid Email. \"@\" and \".\" cannot be together.");
+                                invalid_message("#email","#email-invalid","Invalid Email. \"@\" and \".\" cannot be together.");
                                 info_signal = false;
                             }
                         }
@@ -133,7 +142,7 @@
                             if (f_pos === "." || l_pos === ".") {
                                 email_msg += "\".\" must not be the first/last position.";
                             }
-                            error_message("#email","#email-invalid",email_msg);
+                            invalid_message("#email","#email-invalid",email_msg);
                             info_signal = false;
                         }
                     }
@@ -148,7 +157,7 @@
                         if (dot_index === -1) {
                             email_msg += "A dot is required.";
                         }
-                        error_message("#email","#email-invalid",email_msg);
+                        invalid_message("#email","#email-invalid",email_msg);
                         info_signal = false;
                     }
                 }
@@ -156,7 +165,7 @@
                 var gender = $("#gender").val();
                 
                 if (gender === "") {
-                    error_message("#gender","#gender-invalid","Gender is required");
+                    invalid_message("#gender","#gender-invalid","Gender is required");
                     info_signal = false;
                 }
                 else {
@@ -166,7 +175,7 @@
                 var age = $("#age").val();
 
                 if (age === "") {
-                    error_message("#age","#age-invalid","Age is required");
+                    invalid_message("#age","#age-invalid","Age is required");
                     info_signal = false;
                 }
                 else {
@@ -174,13 +183,13 @@
                         valid_form("#age");
                     }
                     else {
-                        error_message("#age","#age-invalid","Invalid input. Age must be in range 13 to 100");
+                        invalid_message("#age","#age-invalid","Invalid input. Age must be in range 13 to 100");
                         info_signal = false;
                     }
                 }
                 return info_signal;
             }
-            function error_message(invalid_id, message_id, message) {
+            function invalid_message(invalid_id, message_id, message) {
                 $(invalid_id).addClass("is-invalid");
                 $(message_id).text(message);
 
