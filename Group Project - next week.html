@@ -37,7 +37,6 @@
             background-image: none;
             padding-right: .75rem;
         }
-        
         #bg-img {
             background-image: url("image/Starry Sky 1.jpg");
             background-repeat: no-repeat;
@@ -93,19 +92,57 @@
                     );
                 }
             });
+            $("#nickname").on("input",function(){
+                nickname_valid();
+            });
+            $("#email").on("input",function(){
+                email_valid();
+            });
+            $("#gender").on("input",function(){
+                gender_valid();
+            });
+            $("#age").on("input",function(){
+                age_valid();
+            });
             function valid_info() {
                 var info_signal = true;
 
+                if(!(nickname_valid())){
+                    info_signal = false;
+                }
+                if(!(email_valid())){
+                    info_signal = false;
+                }
+                if(!(gender_valid())){
+                    info_signal = false;
+                }
+                if(!(age_valid())){
+                    info_signal = false;
+                }
+
+                return info_signal;
+            }
+            function invalid_message(invalid_id, message_id, message) {
+                $(invalid_id).addClass("is-invalid");
+                $(message_id).text(message);
+
+            }
+            function valid_form(invalid_id) {
+                $(invalid_id).removeClass("is-invalid");
+            }
+            function nickname_valid() {
                 var nickname = $("#nickname").val();
 
                 if (nickname === "") {
                     invalid_message("#nickname","#nickname-invalid","Nick Name is required");
-                    info_signal = false;
+                    return false;
                 }
                 else {
                     valid_form("#nickname");
+                    return true;
                 }
-
+            }
+            function email_valid() {
                 var email = $("#email").val();
                 var f_index_at = email.indexOf("@");
                 var l_index_at = email.lastIndexOf("@");
@@ -115,17 +152,18 @@
                 
                 if (email === "") {
                     invalid_message("#email","#email-invalid","Email is required");
-                    info_signal = false;
+                    return false;
                 }
                 else {
                     if (f_index_at !== -1 && f_index_at === l_index_at && dot_index !== -1) {
                         if (f_pos !== "@" && l_pos !== "@" && f_pos !== "." && l_pos !== ".") {
                             if (!email.includes("@.") && !email.includes(".@")) {
                                 valid_form("#email");
+                                return true;
                             }
                             else {
                                 invalid_message("#email","#email-invalid","Invalid Email. \"@\" and \".\" cannot be together.");
-                                info_signal = false;
+                                return false;
                             }
                         }
                         else {
@@ -137,7 +175,7 @@
                                 email_msg += "\".\" must not be the first/last position.";
                             }
                             invalid_message("#email","#email-invalid",email_msg);
-                            info_signal = false;
+                            return false;
                         }
                     }
                     else {
@@ -152,44 +190,39 @@
                             email_msg += "A dot is required.";
                         }
                         invalid_message("#email","#email-invalid",email_msg);
-                        info_signal = false;
+                        return false;
                     }
                 }
-
+            }
+            function gender_valid() {
                 var gender = $("#gender").val();
                 
                 if (gender === "") {
                     invalid_message("#gender","#gender-invalid","Gender is required");
-                    info_signal = false;
+                    return false;
                 }
                 else {
                     valid_form("#gender");
+                    return true;
                 }
-
+            }
+            function age_valid() {
                 var age = $("#age").val();
 
                 if (age === "") {
                     invalid_message("#age","#age-invalid","Age is required");
-                    info_signal = false;
+                    return false;
                 }
                 else {
                     if (!(/\D/.test(age)) && age >= 13 && age <= 100 && Number(age).toString() === age) {
                         valid_form("#age");
+                        return true;
                     }
                     else {
                         invalid_message("#age","#age-invalid","Invalid input. Age must be in range 13 to 100");
-                        info_signal = false;
+                        return false;
                     }
                 }
-                return info_signal;
-            }
-            function invalid_message(invalid_id, message_id, message) {
-                $(invalid_id).addClass("is-invalid");
-                $(message_id).text(message);
-
-            }
-            function valid_form(invalid_id) {
-                $(invalid_id).removeClass("is-invalid");
             }
         });
     </script>
@@ -246,7 +279,7 @@
                     <div class="form-group">
                         <label for="nickname">Nick Name</label>
                         <input type="text" id="nickname" class="form-control" name="nickname" value="" />
-                        <div id="nickname-invalid" class="invalid-feedback"></div>
+                        <div id="nickname-invalid" class="invalid-feedback">Nick Name required</div>
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address</label>
