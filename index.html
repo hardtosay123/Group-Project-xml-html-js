@@ -78,7 +78,7 @@
                 info_signal = false;
             }
             else {
-                valid_form("#nickname");
+                valid_form("#nickname","#nickname-invalid");
             }
 
             var email = $("#email").val();
@@ -96,7 +96,7 @@
                 if (f_index_at !== -1 && f_index_at === l_index_at && dot_index !== -1) {
                     if (f_pos !== "@" && l_pos !== "@" && f_pos !== "." && l_pos !== ".") {
                         if (!email.includes("@.") && !email.includes(".@")) {
-                            valid_form("#email");
+                            valid_form("#email","#email-invalid");
                         }
                         else {
                             invalid_message("#email","#email-invalid","Invalid Email. \"@\" and \".\" cannot be together.");
@@ -131,14 +131,15 @@
                 }
             }
 
-            var gender = $("#gender").val();
-            
-            if (gender === "") {
-                invalid_message("#gender","#gender-invalid","Gender is required");
-                info_signal = false;
+            var gender_m = $("#male[name='gender']:checked").val();
+            var gender_f = $("#female[name='gender']:checked").val();
+
+            if (gender_m || gender_f) {
+                valid_form("#gender","#gender-invalid");
             }
             else {
-                valid_form("#gender");
+                invalid_message("#gender","#gender-invalid","Gender is required");
+                info_signal = false;
             }
 
             var age = $("#age").val();
@@ -149,7 +150,7 @@
             }
             else {
                 if (!(/\D/.test(age)) && age >= 13 && age <= 100 && Number(age).toString() === age) {
-                    valid_form("#age");
+                    valid_form("#age","#age-invalid");
                 }
                 else {
                     invalid_message("#age","#age-invalid","Invalid input. Age must be in range 13 to 100");
@@ -173,8 +174,9 @@
             $(message_id).text(message);
 
         }
-        function valid_form(invalid_id) {
+        function valid_form(invalid_id, message_id) {
             $(invalid_id).removeClass("is-invalid");
+            $(message_id).text("");
         }
     </script>
 </head>
@@ -188,7 +190,7 @@
                     <h2 class="border-bottom border-dark font-weight-bold"><span class="title-custom">16</span> Personalities Test</h2>
                     <p class ="font-weight-bold">
                         Everyone has an unique personality. 
-                        Each personality representative how your personality type influences many areas of your life.
+                        Each personality represents how your personality type influences many areas of your life.
                         <span class="d-none d-lg-block text-color font-weight-bold">Fill in your personal information and start 10 related questions to know your own personality.</span>
                     </p>
                 </div>
@@ -236,12 +238,15 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="gender" class="mb-0">Gender *</label>
-                            <select id="gender" class="form-control" name="gender">
-                                <option value="">--Select Gender--</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                            </select>
+                            <label class="mb-0">Gender *</label>
+                            <div class="form-check">
+                                <input type="radio" id="male" class="form-check-input" name="gender" value="Male"/>
+                                <label for="male" class="form-check-label">Male</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="female" class="form-check-input" name="gender" value="Female"/>
+                                <label for="female" class="form-check-label">Female</label>
+                            </div>
                             <div class="text-danger">
                                 <small id="gender-invalid"></small>
                                 <br/>
