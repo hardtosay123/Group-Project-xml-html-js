@@ -34,11 +34,6 @@
             90% { transform: translate(1px, 2px) rotate(0deg); }
             100% { transform: translate(1px, -2px) rotate(-1deg); }
         }
-
-        .form-control.is-invalid {
-            background-image: none;
-            padding-right: .75rem;
-        }
         
         #bg-img {
             background-image: url("image/Starry Sky 1.jpg");
@@ -61,6 +56,11 @@
 
         .text-color {
            color:#265a5a;
+        }
+
+        .form-control.is-invalid {
+            background-image: none;
+            padding-right: .75rem;
         }
     </style>
     <script>
@@ -186,7 +186,11 @@
             <div id="content" class="row w-100 p-3 mx-0 bg-light rounded">
                 <div class="col-12 text-dark text-center">
                     <h2 class="border-bottom border-dark font-weight-bold"><span class="title-custom">16</span> Personalities Test</h2>
-                    <p class ="font-weight-bold">Everyone has an unique personality. Each personality representative how your personality type influences many areas of your life.</p>
+                    <p class ="font-weight-bold">
+                        Everyone has an unique personality. 
+                        Each personality representative how your personality type influences many areas of your life.
+                        <span class="d-none d-lg-block text-color font-weight-bold">Fill in your personal information and start 10 related questions to know your own personality.</span>
+                    </p>
                 </div>
                 <div id="slideshows" class="col-12 col-lg-6 p-0">
                     <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -212,32 +216,44 @@
                         </a>
                     </div>
                 </div>
-                <div id="form" class="d-flex justify-content-center align-items-center row mx-0 col-12 col-lg-6 bg-light w-100 rounded px-3 px-lg-5 py-4 py-lg-2">
-                    <p class ="text-color col-12 font-weight-bold">Fill in your personal information and start 10 related questions to know your own personality.</p>
-                    <form action="question_page.html" method="GET" onsubmit="return valid_info()" class="col-12 w-100">
+                <div id="form" class="row mx-0 d-flex justify-content-center align-items-center mx-0 col-12 col-lg-6 bg-light w-100 rounded px-2 px-lg-4 py-4 py-lg-2">
+                    <p class ="d-lg-none text-color col-12 font-weight-bold">Fill in your personal information and start 10 related questions to know your own personality.</p>
+                    <form action="question_page.html" method="GET" onsubmit="return valid_info()" class="col-12">
                         <div class="form-group">
-                            <label for="nickname">Nick Name *</label>
-                            <input type="text" id="nickname" class="form-control" name="nickname" value="" />
-                            <div id="nickname-invalid" class="invalid-feedback"></div>
+                            <label for="nickname" class="mb-0">Nick Name *</label>
+                            <input type="text" id="nickname" class="form-control" name="nickname" value="" placeholder="Nick Name"/>
+                            <div class="text-danger">
+                                <small id="nickname-invalid"></small>
+                                <br/>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="text" id="email" class="form-control" name="email" value="" />
-                            <div id="email-invalid" class="invalid-feedback"></div>
+                            <label for="email" class="mb-0">Email Address *</label>
+                            <input type="text" id="email" class="form-control" name="email" value="" placeholder="Email"/>
+                            <div class="text-danger">
+                                <small id="email-invalid"></small>
+                                <br/>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="gender">Gender *</label>
+                            <label for="gender" class="mb-0">Gender *</label>
                             <select id="gender" class="form-control" name="gender">
                                 <option value="">--Select Gender--</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                             </select>
-                            <div id="gender-invalid" class="invalid-feedback"></div>
+                            <div class="text-danger">
+                                <small id="gender-invalid"></small>
+                                <br/>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="age">Age *</label>
-                            <input type="text" id="age" class="form-control" name="age" value="" />
-                            <div id="age-invalid" class="invalid-feedback"></div>
+                            <label for="age" class="mb-0">Age *</label>
+                            <input type="text" id="age" class="form-control" name="age" value="" placeholder="Age"/>
+                            <div class="text-danger">
+                                <small id="age-invalid" ></small>
+                                <br/>
+                            </div>
                         </div>
                         <input type="submit" id="userinfo-btn" class="btn btn-primary btn-block" value="Start The Quiz" />
                     </form>
