@@ -65,111 +65,112 @@
     </style>
     <script>
         $(document).ready(function() {
-            //this empty as the form is using onsubmit="return valid_info()"
-            //if I put the valid_info() function in here, when the form on submiting will be error as no define valid_info
-        });
-        function valid_info() {
-            var info_signal = true;
+            $("form#userinfo").submit(function(){
+                return valid_info();
+            });
+            function valid_info() {
+                var info_signal = true;
 
-            var nickname = $("#nickname").val();
+                var nickname = $("#nickname").val();
 
-            if (nickname === "") {
-                invalid_message("#nickname","#nickname-invalid","Nick Name is required");
-                info_signal = false;
-            }
-            else {
-                valid_form("#nickname","#nickname-invalid");
-            }
+                if (nickname === "") {
+                    invalid_message("#nickname","#nickname-invalid","Nick Name is required");
+                    info_signal = false;
+                }
+                else {
+                    valid_form("#nickname","#nickname-invalid");
+                }
 
-            var email = $("#email").val();
-            var f_index_at = email.indexOf("@");
-            var l_index_at = email.lastIndexOf("@");
-            var dot_index = email.indexOf(".");
-            var f_pos = email.substr(0,1);
-            var l_pos = email.substr(-1,1);
-            
-            if (email === "") {
-                invalid_message("#email","#email-invalid","Email is required");
-                info_signal = false;
-            }
-            else {
-                if (f_index_at !== -1 && f_index_at === l_index_at && dot_index !== -1) {
-                    if (f_pos !== "@" && l_pos !== "@" && f_pos !== "." && l_pos !== ".") {
-                        if (!email.includes("@.") && !email.includes(".@")) {
-                            valid_form("#email","#email-invalid");
+                var email = $("#email").val();
+                var f_index_at = email.indexOf("@");
+                var l_index_at = email.lastIndexOf("@");
+                var dot_index = email.indexOf(".");
+                var f_pos = email.substr(0,1);
+                var l_pos = email.substr(-1,1);
+                
+                if (email === "") {
+                    invalid_message("#email","#email-invalid","Email is required");
+                    info_signal = false;
+                }
+                else {
+                    if (f_index_at !== -1 && f_index_at === l_index_at && dot_index !== -1) {
+                        if (f_pos !== "@" && l_pos !== "@" && f_pos !== "." && l_pos !== ".") {
+                            if (!email.includes("@.") && !email.includes(".@")) {
+                                valid_form("#email","#email-invalid");
+                            }
+                            else {
+                                invalid_message("#email","#email-invalid","Invalid Email. \"@\" and \".\" cannot be together.");
+                                info_signal = false;
+                            }
                         }
                         else {
-                            invalid_message("#email","#email-invalid","Invalid Email. \"@\" and \".\" cannot be together.");
+                            var email_msg = "Invalid Email. ";
+                            if (f_pos === "@" || l_pos === "@") {
+                                email_msg += "\"@\" must not be the first/last position. ";
+                            }
+                            if (f_pos === "." || l_pos === ".") {
+                                email_msg += "\".\" must not be the first/last position.";
+                            }
+                            invalid_message("#email","#email-invalid",email_msg);
                             info_signal = false;
                         }
                     }
                     else {
                         var email_msg = "Invalid Email. ";
-                        if (f_pos === "@" || l_pos === "@") {
-                            email_msg += "\"@\" must not be the first/last position. ";
+                        if (f_index_at === -1) {
+                            email_msg += "An \"@\" is required. ";
                         }
-                        if (f_pos === "." || l_pos === ".") {
-                            email_msg += "\".\" must not be the first/last position.";
+                        else if (f_index_at !== l_index_at) {
+                            email_msg += "Only an \"@\" is allowed. ";
+                        }
+                        if (dot_index === -1) {
+                            email_msg += "A dot is required.";
                         }
                         invalid_message("#email","#email-invalid",email_msg);
                         info_signal = false;
                     }
                 }
+
+                var gender = $("input[name='gender']:checked").val();
+
+                if (gender && (gender === "Male" || gender === "Female")) {
+                    valid_form("","#gender-invalid");
+                }
                 else {
-                    var email_msg = "Invalid Email. ";
-                    if (f_index_at === -1) {
-                        email_msg += "An \"@\" is required. ";
-                    }
-                    else if (f_index_at !== l_index_at) {
-                        email_msg += "Only an \"@\" is allowed. ";
-                    }
-                    if (dot_index === -1) {
-                        email_msg += "A dot is required.";
-                    }
-                    invalid_message("#email","#email-invalid",email_msg);
+                    invalid_message("","#gender-invalid","Gender is required");
                     info_signal = false;
                 }
-            }
 
-            var gender = $("input[name='gender']:checked").val();
+                var age = $("#age[name='age']:checked").val();
 
-            if (gender && (gender === "Male" || gender === "Female")) {
-                valid_form("","#gender-invalid");
-            }
-            else {
-                invalid_message("","#gender-invalid","Gender is required");
-                info_signal = false;
-            }
+                if (age && age === "certify") {
+                    valid_form("#age","#age-invalid");
+                }
+                else {
+                    invalid_message("#age","#age-invalid","Your age must be 13 and above");
+                    info_signal = false;
+                }
 
-            var age = $("#age[name='age']:checked").val();
-
-            if (age && age === "certify") {
-                valid_form("#age","#age-invalid");
+                if (info_signal === false) {
+                    $("#form").addClass("shake-animation");
+                    setTimeout(
+                        function (){
+                            $("#form").removeClass("shake-animation");
+                        },500
+                    );
+                }
+                
+                return info_signal;
             }
-            else {
-                invalid_message("#age","#age-invalid","Your age must be 13 and above");
-                info_signal = false;
+            function invalid_message(invalid_id, message_id, message) {
+                $(invalid_id).addClass("is-invalid");
+                $(message_id).text(message);
             }
-
-            if (info_signal === false) {
-                $("#form").addClass("shake-animation");
-                setTimeout(
-                    function (){
-                        $("#form").removeClass("shake-animation");
-                    },500
-                );
+            function valid_form(invalid_id, message_id) {
+                $(invalid_id).removeClass("is-invalid");
+                $(message_id).text("");
             }
-            
-            return info_signal;
-        }
-        function invalid_message(invalid_id, message_id, message) {
-            $(invalid_id).addClass("is-invalid");
-            $(message_id).text(message);
-        }
-        function valid_form(invalid_id, message_id) {
-            $(invalid_id).removeClass("is-invalid");
-            $(message_id).text("");
-        }
+        });
     </script>
 </head>
 
@@ -212,7 +213,7 @@
                 </div>
                 <div id="form" class="row mx-0 d-flex justify-content-center align-items-center mx-0 col-12 col-lg-6 bg-light w-100 rounded px-2 px-lg-4 py-4 py-lg-0">
                     <p class ="d-lg-none text-color col-12 font-weight-bold">Fill in your personal information and start 10 related questions to know your own personality.</p>
-                    <form action="question_page.html" method="GET" onsubmit="return valid_info()" class="col-12">
+                    <form id="userinfo" action="question_page.html" method="GET" class="col-12">
                         <div class="form-group">
                             <label for="nickname" class="font-weight-bold">Nick Name *</label>
                             <input type="text" id="nickname" class="form-control" name="nickname" value="" placeholder="Nick Name"/>
@@ -254,7 +255,7 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="submit" id="userinfo-btn" class="btn btn-primary btn-block" value="Start The Quiz" />
+                        <input type="submit" class="btn btn-primary btn-block" value="Start The Quiz" />
                     </form>
                 </div>
             </div>
