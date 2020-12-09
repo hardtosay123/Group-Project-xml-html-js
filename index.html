@@ -131,31 +131,24 @@
                 }
             }
 
-            var gender_m = $("#male[name='gender']:checked").val();
-            var gender_f = $("#female[name='gender']:checked").val();
+            var gender = $("input[name='gender']:checked").val();
 
-            if (gender_m || gender_f) {
-                valid_form("#gender","#gender-invalid");
+            if (gender && (gender === "Male" || gender === "Female")) {
+                valid_form("","#gender-invalid");
             }
             else {
-                invalid_message("#gender","#gender-invalid","Gender is required");
+                invalid_message("","#gender-invalid","Gender is required");
                 info_signal = false;
             }
 
-            var age = $("#age").val();
+            var age = $("#age[name='age']:checked").val();
 
-            if (age === "") {
-                invalid_message("#age","#age-invalid","Age is required");
-                info_signal = false;
+            if (age && age === "certify") {
+                valid_form("#age","#age-invalid");
             }
             else {
-                if (!(/\D/.test(age)) && age >= 13 && age <= 100 && Number(age).toString() === age) {
-                    valid_form("#age","#age-invalid");
-                }
-                else {
-                    invalid_message("#age","#age-invalid","Invalid input. Age must be in range 13 to 100");
-                    info_signal = false;
-                }
+                invalid_message("#age","#age-invalid","Your age must be 13 and above");
+                info_signal = false;
             }
 
             if (info_signal === false) {
@@ -218,11 +211,11 @@
                         </a>
                     </div>
                 </div>
-                <div id="form" class="row mx-0 d-flex justify-content-center align-items-center mx-0 col-12 col-lg-6 bg-light w-100 rounded px-2 px-lg-4 py-4 py-lg-2">
+                <div id="form" class="row mx-0 d-flex justify-content-center align-items-center mx-0 col-12 col-lg-6 bg-light w-100 rounded px-2 px-lg-4 py-4 py-lg-0">
                     <p class ="d-lg-none text-color col-12 font-weight-bold">Fill in your personal information and start 10 related questions to know your own personality.</p>
                     <form action="question_page.html" method="GET" onsubmit="return valid_info()" class="col-12">
                         <div class="form-group">
-                            <label for="nickname" class="mb-0">Nick Name *</label>
+                            <label for="nickname" class="font-weight-bold">Nick Name *</label>
                             <input type="text" id="nickname" class="form-control" name="nickname" value="" placeholder="Nick Name"/>
                             <div class="text-danger">
                                 <small id="nickname-invalid"></small>
@@ -230,7 +223,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="email" class="mb-0">Email Address *</label>
+                            <label for="email" class="font-weight-bold">Email Address *</label>
                             <input type="text" id="email" class="form-control" name="email" value="" placeholder="Email"/>
                             <div class="text-danger">
                                 <small id="email-invalid"></small>
@@ -238,7 +231,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="mb-0">Gender *</label>
+                            <label class="font-weight-bold">Gender *</label>
                             <div class="form-check">
                                 <input type="radio" id="male" class="form-check-input" name="gender" value="Male"/>
                                 <label for="male" class="form-check-label">Male</label>
@@ -253,11 +246,13 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="age" class="mb-0">Age *</label>
-                            <input type="text" id="age" class="form-control" name="age" value="" placeholder="Age"/>
-                            <div class="text-danger">
-                                <small id="age-invalid" ></small>
-                                <br/>
+                            <div class="form-check">
+                                <input type="checkbox" id="age" class="form-check-input" name="age" value="certify"/>
+                                <label for="age" class="form-check-label font-weight-bold">I certify that I am age 13 and above</label>
+                                <div class="text-danger">
+                                    <small id="age-invalid"></small>
+                                    <br/>
+                                </div>
                             </div>
                         </div>
                         <input type="submit" id="userinfo-btn" class="btn btn-primary btn-block" value="Start The Quiz" />
