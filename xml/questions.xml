@@ -3,161 +3,193 @@
     <question question="1">
         <title>Your travel plans are more likely to look like a rough list of ideas than a detailed itinerary.</title>
         <option name="a1" mark="1">Agree</option>
-        <option name="a1" mark="0">Disagree</option>
+        <option name="a1" mark="0">Neutral</option>
+        <option name="a1" mark="-1">Disagree</option>
     </question>
     <question question="2">
         <title>It would be a challenge for you to spend the whole weekend all by yourself without feeling bored.</title>
         <option name="a2" mark="1">Agree</option>
-        <option name="a2" mark="0">Disagree</option>
+        <option name="a2" mark="0">Neutral</option>
+        <option name="a2" mark="-1">Disagree</option>
     </question>
     <question question="3">
         <title>You usually lose interest in a discussion when it gets philosophical.</title>
         <option name="a3" mark="1">Agree</option>
-        <option name="a3" mark="0">Disagree</option>
+        <option name="a3" mark="0">Neutral</option>
+        <option name="a3" mark="-1">Disagree</option>
     </question>
     <question question="4">
         <title>You like discussing different views and theories on what the world could look like in the future.</title>
         <option name="a4" mark="1">Agree</option>
-        <option name="a4" mark="0">Disagree</option>
+        <option name="a4" mark="0">Neutral</option>
+        <option name="a4" mark="-1">Disagree</option>
     </question>
     <question question="5">
         <title>You are still bothered by the mistakes you made a long time ago.</title>
         <option name="a5" mark="1">Agree</option>
-        <option name="a5" mark="0">Disagree</option>
+        <option name="a5" mark="0">Neutral</option>
+        <option name="a5" mark="-1">Disagree</option>
     </question>
     <question question="6">
         <title>If you make a mistake, you tend to start doubting yourself, your abilities, or your knowledge.</title>
         <option name="a6" mark="1">Agree</option>
-        <option name="a6" mark="0">Disagree</option>
+        <option name="a6" mark="0">Neutral</option>
+        <option name="a6" mark="-1">Disagree</option>
     </question>
     <question question="7">
         <title>You often spend time exploring unrealistic yet intriguing ideas.</title>
         <option name="a7" mark="1">Agree</option>
-        <option name="a7" mark="0">Disagree</option>
+        <option name="a7" mark="0">Neutral</option>
+        <option name="a7" mark="-1">Disagree</option>
     </question>
     <question question="8">
         <title>When looking for a movie to watch, you can spend ages browsing the catalog.</title>
         <option name="a8" mark="1">Agree</option>
-        <option name="a8" mark="0">Disagree</option>
+        <option name="a8" mark="0">Neutral</option>
+        <option name="a8" mark="-1">Disagree</option>
     </question>
     <question question="9">
         <title>You are more of a detail-oriented than a big picture person.</title>
         <option name="d1" mark="1">Agree</option>
-        <option name="d1" mark="0">Disagree</option>
+        <option name="d1" mark="0">Neutral</option>
+        <option name="d1" mark="-1">Disagree</option>
     </question>
     <question question="10">
         <title>You often find it difficult to relate to people who let their emotions guide them.</title>
         <option name="d2" mark="1">Agree</option>
-        <option name="d2" mark="0">Disagree</option>
+        <option name="d2" mark="0">Neutral</option>
+        <option name="d2" mark="-1">Disagree</option>
     </question>
     <question question="11">
         <title>You often rely on other people to be the ones to start a conversation and keep it going.</title>
         <option name="d3" mark="1">Agree</option>
-        <option name="d3" mark="0">Disagree</option>
+        <option name="d3" mark="0">Neutral</option>
+        <option name="d3" mark="-1">Disagree</option>
     </question>
     <question question="12">
         <title>You would never let yourself cry in front of others.</title>
         <option name="d4" mark="1">Agree</option>
-        <option name="d4" mark="0">Disagree</option>
+        <option name="d4" mark="0">Neutral</option>
+        <option name="d4" mark="-1">Disagree</option>
     </question>
     <question question="13">
         <title>You enjoy vibrant social events with lots of people.</title>
         <option name="d5" mark="1">Agree</option>
-        <option name="d5" mark="0">Disagree</option>
+        <option name="d5" mark="0">Neutral</option>
+        <option name="d5" mark="-1">Disagree</option>
     </question>
     <question question="14">
         <title>You can stay calm under a lot of pressure.</title>
         <option name="d6" mark="1">Agree</option>
-        <option name="d6" mark="0">Disagree</option>
+        <option name="d6" mark="0">Neutral</option>
+        <option name="d6" mark="-1">Disagree</option>
     </question>
     <question question="15">
         <title>If you have to temporarily put your plans on hold, you make sure it is your top priority to get back on track as soon as possible.</title>
         <option name="d7" mark="1">Agree</option>
-        <option name="d7" mark="0">Disagree</option>
+        <option name="d7" mark="0">Neutral</option>
+        <option name="d7" mark="-1">Disagree</option>
     </question>
     <question question="16">
         <title>You are dedicated and focused on your goals, only rarely getting sidetracked.</title>
         <option name="d8" mark="1">Agree</option>
-        <option name="d8" mark="0">Disagree</option>
+        <option name="d8" mark="0">Neutral</option>
+        <option name="d8" mark="-1">Disagree</option>
     </question>
     <question question="17">
         <title>You have a careful and methodical approach to life.</title>
         <option name="s1" mark="1">Agree</option>
-        <option name="s1" mark="0">Disagree</option>
+        <option name="s1" mark="0">Neutral</option>
+        <option name="s1" mark="-1">Disagree</option>
     </question>
     <question question="18">
         <title>When it comes to making life-changing choices, you mostly listen to your heart rather than your head.</title>
         <option name="s2" mark="1">Agree</option>
-        <option name="s2" mark="0">Disagree</option>
+        <option name="s2" mark="0">Neutral</option>
+        <option name="s2" mark="-1">Disagree</option>
     </question>
     <question question="19">
         <title>If your friend is sad about something, your first instinct is to support them emotionally, not try to solve their problem.</title>
         <option name="s3" mark="1">Agree</option>
-        <option name="s3" mark="0">Disagree</option>
+        <option name="s3" mark="0">Neutral</option>
+        <option name="s3" mark="-1">Disagree</option>
     </question>
     <question question="20">
         <title>You rarely dwell on your regrets.</title>
         <option name="s4" mark="1">Agree</option>
-        <option name="s4" mark="0">Disagree</option>
+        <option name="s4" mark="0">Neutral</option>
+        <option name="s4" mark="-1">Disagree</option>
     </question>
     <question question="21">
         <title>People can rarely upset you.</title>
         <option name="s5" mark="1">Agree</option>
-        <option name="s5" mark="0">Disagree</option>
+        <option name="s5" mark="0">Neutral</option>
+        <option name="s5" mark="-1">Disagree</option>
     </question>
     <question question="22">
         <title>You are very affectionate with people you care about.</title>
         <option name="s6" mark="1">Agree</option>
-        <option name="s6" mark="0">Disagree</option>
+        <option name="s6" mark="0">Neutral</option>
+        <option name="s6" mark="-1">Disagree</option>
     </question>
     <question question="23">
         <title>When in a group of people you do not know, you have no problem jumping right into their conversation.</title>
         <option name="s7" mark="1">Agree</option>
-        <option name="s7" mark="0">Disagree</option>
+        <option name="s7" mark="0">Neutral</option>
+        <option name="s7" mark="-1">Disagree</option>
     </question>
     <question question="24">
         <title>You often have a hard time understanding other people’s feelings.</title>
         <option name="s8" mark="1">Agree</option>
-        <option name="s8" mark="0">Disagree</option>
+        <option name="s8" mark="0">Neutral</option>
+        <option name="s8" mark="-1">Disagree</option>
     </question>
     <question question="25">
         <title>When you sleep, your dreams tend to be bizarre and fantastical.</title>
         <option name="e1" mark="1">Agree</option>
-        <option name="e1" mark="0">Disagree</option>
+        <option name="e1" mark="0">Neutral</option>
+        <option name="e1" mark="-1">Disagree</option>
     </question>
     <question question="26">
         <title>You cannot imagine yourself dedicating your life to the study of something that you cannot see, touch, or experience.</title>
         <option name="e2" mark="1">Agree</option>
-        <option name="e2" mark="0">Disagree</option>
+        <option name="e2" mark="0">Neutral</option>
+        <option name="e2" mark="-1">Disagree</option>
     </question>
     <question question="27">
         <title>You often make decisions on a whim.</title>
         <option name="e3" mark="1">Agree</option>
-        <option name="e3" mark="0">Disagree</option>
+        <option name="e3" mark="0">Neutral</option>
+        <option name="e3" mark="-1">Disagree</option>
     </question>
     <question question="28">
         <title>The time you spend by yourself often ends up being more interesting and satisfying than the time you spend with other people.</title>
         <option name="e4" mark="1">Agree</option>
-        <option name="e4" mark="0">Disagree</option>
+        <option name="e4" mark="0">Neutral</option>
+        <option name="e4" mark="-1">Disagree</option>
     </question>
     <question question="29">
         <title>You always know exactly what you want.</title>
         <option name="e5" mark="1">Agree</option>
-        <option name="e5" mark="0">Disagree</option>
+        <option name="e5" mark="0">Neutral</option>
+        <option name="e5" mark="-1">Disagree</option>
     </question>
     <question question="30">
         <title>When starting to work on a project, you prefer to make as many decisions upfront as possible.</title>
         <option name="e6" mark="1">Agree</option>
-        <option name="e6" mark="0">Disagree</option>
+        <option name="e6" mark="0">Neutral</option>
+        <option name="e6" mark="-1">Disagree</option>
     </question>
     <question question="31">
         <title>You feel more drawn to places with a bustling and busy atmosphere than to more quiet and intimate ones.</title>
         <option name="e7" mark="1">Agree</option>
-        <option name="e7" mark="0">Disagree</option>
+        <option name="e7" mark="0">Neutral</option>
+        <option name="e7" mark="-1">Disagree</option>
     </question>
     <question question="32">
         <title>You often put special effort into interpreting the real meaning or the message of a song or a movie.</title>
         <option name="e8" mark="1">Agree</option>
-        <option name="e8" mark="0">Disagree</option>
+        <option name="e8" mark="0">Neutral</option>
+        <option name="e8" mark="-1">Disagree</option>
     </question>
 </questions>
