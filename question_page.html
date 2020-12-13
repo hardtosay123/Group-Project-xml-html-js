@@ -22,13 +22,13 @@
                 success: function (questions) {
                     $(questions).find("question").each(function(){
                         var question = "";
-                        question += '<div class="row mx-0 my-5 p-2 p-md-3 p-lg-5 bg-light rounded">';
-                        question += '<h5 class="col-12 px-0">';
+                        question += '<div class="row mx-0 my-5 p-3 bg-light rounded">';
+                        question += '<h5 class="col-12 px-0 custom-font">';
                         question += $(this).attr("question") + ") "+$(this).find("title").text();
                         question += "</h5>";
-                        question += '<div class="col-12 d-flex justify-content-center align-items-center">';
+                        question += '<div class="col-12 px-0 d-flex flex-wrap justify-content-md-center align-items-md-center my-2">';
                         $(this).find("option").each(function(){
-                            question += '<button class="btn '+$(this).attr("color")+' rounded-circle option-btn" name="'+$(this).attr("name")+'" value"'+$(this).attr("mark")+'">' + $(this).text() + '</button>';
+                            question += '<button class="btn '+$(this).attr("color")+' col-12 col-sm-4 col-xl-auto option-btn" name="'+$(this).attr("name")+'" value"'+$(this).attr("mark")+'">' + $(this).text() + '</button>';
                         });
                         question += '</div>';
                         question += "</div>";
