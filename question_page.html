@@ -28,7 +28,7 @@
                         question += "</h5>";
                         question += '<div class="col-12 d-flex justify-content-center align-items-center">';
                         $(this).find("option").each(function(){
-                            question += '<button class="btn btn-success rounded-circle option-btn" name="'+$(this).attr("name")+'" value"'+$(this).attr("mark")+'">' + $(this).text() + '</button>';
+                            question += '<button class="btn '+$(this).attr("color")+' rounded-circle option-btn" name="'+$(this).attr("name")+'" value"'+$(this).attr("mark")+'">' + $(this).text() + '</button>';
                         });
                         question += '</div>';
                         question += "</div>";
