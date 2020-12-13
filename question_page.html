@@ -2,26 +2,50 @@
 <html>
 
 <head>
-    <title>16 Personalities Test</title>
+    <title>Test Questions - 16 Personalities Test</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <style>
-        * {
-            scroll-behavior: smooth;
-            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: "xml/questions.xml",
+                dataType: "xml",
+                error: function (e) {
+                    console.log(e);
+                    alert("XML Files fail to load");
+                },
+                success: function (questions) {
+                    $(questions).find("question").each(function(){
+                        var question = "";
+                        question += '<div class="row mx-0 my-5 p-2 p-md-3 p-lg-5 bg-light rounded">';
+                        question += '<h5 class="col-12 px-0">';
+                        question += $(this).attr("question") + ") "+$(this).find("title").text();
+                        question += "</h5>";
+                        question += '<div class="col-12 d-flex justify-content-center align-items-center">';
+                        $(this).find("option").each(function(){
+                            question += '<button class="btn btn-success rounded-circle option-btn" name="'+$(this).attr("name")+'" value"'+$(this).attr("mark")+'">' + $(this).text() + '</button>';
+                        });
+                        question += '</div>';
+                        question += "</div>";
+                        $("#wrapper").append(question);
+                    });
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <div>
-        hello world
+    <div class="container d-flex py-3 justify-content-center align-items-center min-vh-100">
+        <div id="bg-img" class="position-fixed"></div>
+        <div id="wrapper" class="w-100 position-relative rounded">
+            
+        </div>
     </div>
 </body>
 

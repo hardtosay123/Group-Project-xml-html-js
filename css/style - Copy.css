@@ -53,13 +53,3 @@
     background-image: none;
     padding-right: .75rem;
 }
-.option-btn {
-    height: 100px;
-    width: 100px;
-}
-@media only screen and (max-width: 768px) {
-    
-}
-@media only screen and (max-width: 500px) {
-
-}

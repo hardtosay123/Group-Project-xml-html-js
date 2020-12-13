@@ -128,13 +128,18 @@
             <div id="content" class="row w-100 p-3 mx-0 bg-light rounded">
                 <div class="col-12 text-dark text-center">
                     <h2 class="border-bottom border-dark font-weight-bold"><span class="title-custom">16</span> Personalities Test</h2>
-                    <p class ="font-weight-bold">
-                        Everyone has an unique personality. 
-                        Each personality represents how your personality type influences many areas of your life.
-                        <span class="d-none d-lg-block text-color font-weight-bold">Fill in your personal information and start 10 related questions to know your own personality.</span>
-                    </p>
+                    <div>
+                        <p class ="font-weight-bold d-none d-md-block">
+                            Everyone has an unique personality. 
+                            Each personality represents how your personality type influences many areas of your life.
+                            <span class="d-md-none d-lg-block text-color font-weight-bold">Fill in your personal information and start 32 related questions to know your own personality.</span>
+                        </p>
+                        <p class ="font-weight-bold d-md-none">
+                            This is a test to check your own unique personality. We will provide the test with 32 interesting questions. Fill in your personal information and join us now!
+                        </p>
+                    </div>
                 </div>
-                <div id="slideshows" class="col-12 col-lg-6 p-0">
+                <div id="slideshows" class="d-none d-md-block col-12 col-lg-6 p-0">
                     <div id="carousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -158,8 +163,8 @@
                         </a>
                     </div>
                 </div>
-                <div id="form" class="row mx-0 d-flex justify-content-center align-items-center mx-0 col-12 col-lg-6 bg-light w-100 rounded px-2 px-lg-4 py-4 py-lg-0">
-                    <p class ="d-lg-none text-color col-12 font-weight-bold">Fill in your personal information and start 10 related questions to know your own personality.</p>
+                <div id="form" class="row mx-0 d-flex justify-content-center align-items-center mx-0 col-12 col-lg-6 bg-light w-100 rounded px-2 px-lg-4 py-2 py-md-4 py-lg-0">
+                    <p class ="d-none d-md-block d-lg-none text-color col-12 font-weight-bold">Fill in your personal information and start 32 related questions to know your own personality.</p>
                     <form id="userinfo" action="question_page.html" method="GET" class="col-12">
                         <div class="form-group">
                             <label for="nickname" class="font-weight-bold">Nick Name *</label>
