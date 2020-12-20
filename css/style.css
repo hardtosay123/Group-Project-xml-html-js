@@ -54,14 +54,51 @@
     padding-right: .75rem;
 }
 .start-btn-size {
+    border-radius: 50px;
     padding: 10px 30px !important;
     font-size: 25px;
 }
-.option-btn {
-    height: 55px;
-}
 .custom-font {
     font-size: 16px;
+}
+.option-css {
+    height: 55px;
+}
+.r-agree {
+    background-color: #006600;
+    color: white;
+    border-color:#999999;
+}
+.r-agree.selected, .r-agree:hover {
+    background-color:#00b300;
+    color:white;
+}
+.agree {
+    background-color: #ff6600;
+    color: white;
+    border-color:#999999;
+}
+.agree.selected, .agree:hover {
+    background-color:#ff944d;
+    color: white;
+}
+.disagree {
+    background-color:#0000ff;
+    color: white;
+    border-color:#999999;
+}
+.disagree.selected, .disagree:hover {
+    background-color:#9999ff;
+    color: white;
+}
+.r-disagree {
+    background-color:#cc0000;
+    color: white;
+    border-color:#999999;
+}
+.r-disagree.selected, .r-disagree:hover {
+    background-color:#ff9999;
+    color: white;
 }
 @media only screen and (min-width: 576px) {
     .start-btn-size {
@@ -71,7 +108,7 @@
     .custom-font {
         font-size: 18px;
     }
-    .option-btn {
+    .option-css {
         font-size: 16px;
     }
 }
@@ -79,25 +116,26 @@
     .custom-font {
         font-size: 20px;
     }
+    .option-css {
+        font-size: 18px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .custom-font {
         font-size: 22px;
     }
-    .option-btn {
-        font-size: 18px;
+    .option-css {
+        font-size: 20px;
     }
 }
 @media only screen and (min-width: 1200px) {
     .start-btn-size {
-        padding: 40px 60px !important;
-        font-size: 32px;
+        padding: 35px 55px !important;
+        font-size: 30px;
     }
-    .option-btn {
+    .option-css {
         border-radius: 50%;
-        height: 130px;
-        width: 130px;
-        margin: 0px 20px;
-        font-size: 20px;
+        height: 120px;
+        width: 120px;
     }
 }
