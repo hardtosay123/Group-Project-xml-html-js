@@ -45,7 +45,7 @@
                                 question += '<div class="col-12 col-xl-6 p-0 p-sm-2 d-xl-flex justify-content-xl-center align-items-xl-center">';
                                 question += '<div class="row mx-0">';
                                 question += '<h5 class="col-12 px-0 custom-font row mx-0">';
-                                question += '<span class="col-1 px-0">'+$(this).attr("question") + ") </span>" +'<span class="col-11 px-0">'+ $(this).find("title").text() + '</span>';
+                                question += '<span class="col-1 px-0">' + $(this).attr("question") + ") </span>" + '<span class="col-11 px-0">' + $(this).find("title").text() + '</span>';
                                 question += "</h5>";
 
                                 question += '<div class="col-12 px-0 d-flex flex-wrap justify-content-md-center align-items-md-center my-2 my-sm-1 my-lg-2 my-xl-4">';
@@ -81,11 +81,16 @@
                                 }
                                 question += '</div>';
                                 $("#wrapper").append(question);
-                                $(".options").click(function () {
-                                    $(".options").removeClass("selected");
-                                    $(this).addClass("selected");
-                                });
-                                $("#wrapper").fadeIn(1000, "swing", function () {
+
+                                $("#wrapper").fadeIn(500, "swing", function () {
+                                    $(".options").click(function () {
+                                        $(".options").removeClass("selected");
+                                        $(this).addClass("selected");
+                                        $(("input#" + $(this).attr("for"))).attr("checked", true);
+                                        var name_of_option = $(("input#" + $(this).attr("for")) + ":checked").attr("name");
+                                        useranswer[name_of_option] = $(("input#" + $(this).attr("for")) + ":checked").val();
+                                        next();
+                                    });
                                     $(".control-question").click(function () {
                                         var control = $(this).val();
                                         if (control == "previous") {
@@ -142,7 +147,8 @@
                     <h3>WHAT's YOUR UNIQUE PERSONALITIES?</h3>
                     <span>READY TO KNOW?</span>
                     <div class="w-100 my-4">
-                        <button type="button" id="start" class="btn btn-info start-btn-size py-3 px-5">START THE QUIZ! →</button>
+                        <button type="button" id="start" class="btn btn-info start-btn-size py-3 px-5">START THE QUIZ!
+                            →</button>
                     </div>
                     <p>Take the quiz to unlock your unique personality in just 15 minutes !</p>
                 </div>
