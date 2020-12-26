@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questions>
+    <question question="1" name="a1" picture="image/question/001.jpg">
+        <title>Your travel plans are more likely to look like a rough list of ideas than a detailed itinerary.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="2" name="a2" picture="image/question/002.jpg">
+        <title>It would be a challenge for you to spend the whole weekend all by yourself without feeling bored.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="3" name="a3" picture="image/question/003.jpg">
+        <title>You usually lose interest in a discussion when it gets philosophical.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="4" name="a4" picture="image/question/004.jpg">
+        <title>You like discussing different views and theories on what the world could look like in the future.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="5" name="a5" picture="image/question/005.jpg">
+        <title>You are still bothered by the mistakes you made a long time ago.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="6" name="a6" picture="image/question/006.jpg">
+        <title>If you make a mistake, you tend to start doubting yourself, your abilities, or your knowledge.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="7" name="a7" picture="image/question/007.jpg">
+        <title>You often spend time exploring unrealistic yet intriguing ideas.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="8" name="a8" picture="image/question/008.jpg">
+        <title>When looking for a movie to watch, you can spend ages browsing the catalog.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="9" name="d1" picture="image/question/009.jpg">
+        <title>You are more of a detail-oriented than a big picture person.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="10" name="d2" picture="image/question/010.jpg">
+        <title>You often find it difficult to relate to people who let their emotions guide them.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="11" name="d3" picture="image/question/011.jpg">
+        <title>You often rely on other people to be the ones to start a conversation and keep it going.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="12" name="d4" picture="image/question/012.jpg">
+        <title>You would never let yourself cry in front of others.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="13" name="d5" picture="image/question/013.jpg">
+        <title>You enjoy vibrant social events with lots of people.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="14" name="d6" picture="image/question/014.jpg">
+        <title>You can stay calm under a lot of pressure.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="15" name="d7" picture="image/question/015.jpg">
+        <title>If you have to temporarily put your plans on hold, you make sure it is your top priority to get back on track as soon as possible.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="16" name="d8" picture="image/question/016.jpg">
+        <title>You are dedicated and focused on your goals, only rarely getting sidetracked.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="17" name="s1" picture="image/question/017.jpg">
+        <title>You have a careful and methodical approach to life.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="18" name="s2" picture="image/question/018.jpg">
+        <title>When it comes to making life-changing choices, you mostly listen to your heart rather than your head.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="19" name="s3" picture="image/question/019.jpg">
+        <title>If your friend is sad about something, your first instinct is to support them emotionally, not try to solve their problem.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="20" name="s4" picture="image/question/020.jpg">
+        <title>You rarely dwell on your regrets.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="21" name="s5" picture="image/question/021.jpg">
+        <title>People can rarely upset you.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="22" name="s6" picture="image/question/022.jpg">
+        <title>You are very affectionate with people you care about.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="23" name="s7" picture="image/question/023.jpg">
+        <title>When in a group of people you do not know, you have no problem jumping right into their conversation.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="24" name="s8" picture="image/question/024.jpg">
+        <title>You often have a hard time understanding other people’s feelings.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="25" name="e1" picture="image/question/025.jpg">
+        <title>When you sleep, your dreams tend to be bizarre and fantastical.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="26" name="e2" picture="image/question/026.jpg">
+        <title>You cannot imagine yourself dedicating your life to the study of something that you cannot see, touch, or experience.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="27" name="e3" picture="image/question/027.jpg">
+        <title>You often make decisions on a whim.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="28" name="e4" picture="image/question/028.jpg">
+        <title>The time you spend by yourself often ends up being more interesting and satisfying than the time you spend with other people.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="29" name="e5" picture="image/question/029.jpg">
+        <title>You always know exactly what you want.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="30" name="e6" picture="image/question/030.jpg">
+        <title>When starting to work on a project, you prefer to make as many decisions upfront as possible.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="31" name="e7" picture="image/question/031.jpg">
+        <title>You feel more drawn to places with a bustling and busy atmosphere than to more quiet and intimate ones.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+    <question question="32" name="e8" picture="image/question/032.jpg">
+        <title>You often put special effort into interpreting the real meaning or the message of a song or a movie.</title>
+        <option option="o1" mark="2" class="r-agree">Really Agree</option>
+        <option option="o2" mark="1" class="agree">Agree</option>
+        <option option="o3" mark="-1" class="disagree">Disagree</option>
+        <option option="o4" mark="-2" class="r-disagree">Really Disagree</option>
+    </question>
+</questions>
