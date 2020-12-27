@@ -69,16 +69,19 @@
     color: white;
     border-color:#999999;
 }
-.r-agree.selected, .r-agree:hover {
+.r-agree:hover {
     background-color:#00b300;
     color:white;
+}
+.r-agree.selected, .agree.selected, .disagree.selected, .r-disagree.selected {
+    background-color:grey;
 }
 .agree {
     background-color: #ff6600;
     color: white;
     border-color:#999999;
 }
-.agree.selected, .agree:hover {
+.agree:hover {
     background-color:#ff944d;
     color: white;
 }
@@ -87,7 +90,7 @@
     color: white;
     border-color:#999999;
 }
-.disagree.selected, .disagree:hover {
+ .disagree:hover {
     background-color:#9999ff;
     color: white;
 }
@@ -95,8 +98,8 @@
     background-color:#cc0000;
     color: white;
     border-color:#999999;
-}
-.r-disagree.selected, .r-disagree:hover {
+} 
+.r-disagree:hover {
     background-color:#ff9999;
     color: white;
 }
