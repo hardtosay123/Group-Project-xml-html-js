@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+    <category value="INTJ" type="text">
+        <result>
+            <description> An Architect (INTJ) is a person with the Introverted, Intuitive, Thinking, and Judging personality traits.</description>
+            <description>These thoughtful tacticians love perfecting the details of life, applying creativity and rationality to everything they do. Their inner world is often a private, complex one.</description>
+        </result>
+    </category>
+    <category value="INTP" type="text">
+        <result>
+            <description>A Logician (INTP) is someone with the Introverted, Intuitive, Thinking, and Prospecting personality traits.</description>
+            <descriptio>These flexible thinkers enjoy taking an unconventional approach to many aspects of life.</description>
+            <description>They often seek out unlikely paths, mixing willingness to experiment with personal creativity.></description>
+        </result>
+    </category>
+    <category value="INFJ" type="text">
+        <result>
+            <description>An Advocate (INFJ) is someone with the Introverted, Intuitive, Feeling, and Judging personality traits.</description>
+            <description>They tend to approach life with deep thoughtfulness and imagination.</description>
+            <description>Their inner vision, personal values, and a quiet, principled version of humanism guide them in all things.</description>
+        </result>
+    </category>
+    <category value="INFP" type="text">
+        <result>
+            <description> A Mediator (INFP) is someone who possesses the Introverted, Intuitive, Feeling, and Prospecting personality traits.</description>
+            <description>These rare personality types tend to be quiet, open-minded, and imaginative, and they apply a caring and creative approach to everything they do.</description>
+        </result>
+    </category>
+    <category value="ENTJ" type="text">
+        <result>
+            <description>A Commander (ENTJ) is someone with the Extraverted, Intuitive, Thinking, and Judging personality traits.</description>
+            <description>They are decisive people who love momentum and accomplishment.</description>
+            <description>They gather information to construct their creative visions but rarely hesitate for long before acting on them.</description>
+        </result>
+    </category>
+    <category value="ENTP" type="text">
+        <result>
+            <description> A Debater (ENTP) is a person with the Extraverted, Intuitive, Thinking, and Prospecting personality traits.</description>
+            <description>They tend to be bold and creative, deconstructing and rebuilding ideas with great mental agility.</description>
+            <description>They pursue their goals vigorously despite any resistance they might encounter.</description>
+        </result>
+    </category>
+    <category value="ENFJ" type="text">
+        <result>
+            <description>A Protagonist (ENFJ) is a person with the Extraverted, Intuitive, Feeling, and Judging personality traits.</description>
+            <description>These warm, forthright types love helping others, and they tend to have strong ideas and values.</description>
+            <description>They back their perspective with the creative energy to achieve their goals.</description>
+        </result>
+    </category>
+    <category value="ENFP" type="text">
+        <result>
+            <description>A Campaigner (ENFP) is someone with the Extraverted, Intuitive, Feeling, and Prospecting personality traits.</description>
+            <description>These people tend to embrace big ideas and actions that reflect their sense of hope and goodwill toward others.</description>
+            <description>Their vibrant energy can flow in many directions.</description>
+        </result>
+    </category>
+    <category value="ISTJ" type="text">
+        <result>
+            <description>A Logistician (ISTJ) is someone with the Introverted, Observant, Thinking, and Judging personality traits.</description>
+            <description>These people tend to be reserved yet willful, with a rational outlook on life.</description>
+            <description>They compose their actions carefully and carry them out with methodical purpose.</description>
+        </result>
+    </category>
+    <category value="ISFJ" type="text">
+        <result>
+            <description> A Defender (ISFJ) is someone with the Introverted, Observant, Feeling, and Judging personality traits.</description>
+            <description>These people tend to be warm and unassuming in their own steady way.</description>
+            <description>They’re efficient and responsible, giving careful attention to practical details in their daily lives.</description>
+        </result>
+    </category>
+    <category value="ISTP" type="text">
+        <result>
+            <description>A Virtuoso (ISTP) is someone with the Introverted, Observant, Thinking, and Prospecting personality traits. </description>
+            <description>They tend to have an individualistic mindset, pursuing goals without needing much external connection.</description>
+            <description>They engage in life with inquisitiveness and personal skill, varying their approach as needed.</description>
+        </result>
+    </category>
+    <category value="ISFP" type="text">
+        <result>
+            <description> An Adventurer (ISFP) is a person with the Introverted, Observant, Feeling, and Prospecting personality traits</description>
+            <description>They tend to have open minds, approaching life, new experiences, and people with grounded warmth. </description>
+            <description>Their ability to stay in the moment helps them uncover exciting potentials.</description>
+        </result>
+    </category>
+    <category value="ESTJ" type="text">
+        <result>
+            <description>An Executive (ESTJ) is someone with the Extraverted, Observant, Thinking, and Judging personality traits. </description>
+            <description>They possess great fortitude, emphatically following their own sensible judgment.</description>
+            <description>They often serve as a stabilizing force among others, able to offer solid direction amid adversity.</description>
+        </result>
+    </category>
+    <category value="ESFJ" type="text">
+        <result>
+            <description>A Consul (ESFJ) is a person with the Extraverted, Observant, Feeling, and Judging personality traits.</description>
+            <description>They are attentive and people-focused, and they enjoy taking part in their social community. </description>
+            <description>Their achievements are guided by decisive values, and they willingly offer guidance to others.</description>
+        </result>
+    </category>
+    <category value="ESTP" type="text">
+        <result>
+            <description>An Entrepreneur (ESTP) is someone with the Extraverted, Observant, Thinking, and Prospecting personality traits. </description>
+            <description>They tend to be energetic and action-oriented, deftly navigating whatever is in front of them. </description>
+            <description>They love uncovering life’s opportunities, whether socializing with others or in more personal pursuits.</description>
+        </result>
+    </category>
+    <category value="ESFP" type="text">
+        <result>
+            <description>An Entertainer (ESFP) is a person with the Extraverted, Observant, Feeling, and Prospecting personality traits. </description>
+            <description>These people love vibrant experiences, engaging in life eagerly and taking pleasure in discovering the unknown. </description>
+            <description>They can be very social, often encouraging others into shared activities.</description>
+        </result>
+    </category>
+</results>
